@@ -10,30 +10,93 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <!-- your content goes here ... -->
 		<h1 class="text-4xl font-bold text-neutral-500">Gallery</h1>
 		
-    <div class="md:max-w-2xl md:mx-auto">
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
-        <div class="space-y-2">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80" alt="Image Description">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Image Description">
+    <!-- Masonry Cards -->
+<div class="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <!-- Grid -->
+  <div class="grid sm:grid-cols-12 gap-6">
+    <div class="sm:self-end col-span-12 sm:col-span-7 md:col-span-8 lg:col-span-5 lg:col-start-3">
+      <!-- Card -->
+      <a class="group relative block rounded-xl overflow-hidden" href="#">
+        <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3481&q=80" alt="Image Description">
         </div>
-        <div class="space-y-2">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="Image Description">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1664574654529-b60630f33fdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="Image Description">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1669824774762-65ddf29bee56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="Image Description">
+        <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
+          <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-neutral-800 dark:text-neutral-200">
+            Workplace personalities
+          </div>
         </div>
-        <div class="space-y-2">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="Image Description">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description">
-        </div>
-        <div class="space-y-2">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80" alt="Image Description">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1668584054035-f5ba7d426401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3465&q=80" alt="Image Description">
-          <img class="w-full sm:size-40 object-cover" src="https://images.unsplash.com/photo-1668863699009-1e3b4118675d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80" alt="Image Description">
-        </div>
-      </div>
+      </a>
+      <!-- End Card -->
     </div>
+    <!-- End Col -->
+
+    <div class="sm:self-end col-span-12 sm:col-span-5 md:col-span-4 lg:col-span-3">
+      <!-- Card -->
+      <a class="group relative block rounded-xl overflow-hidden" href="#">
+        <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="Image Description">
+        </div>
+        <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
+          <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-neutral-800 dark:text-neutral-200">
+            Women in engineering
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+    </div>
+    <!-- End Col -->
+
+    <div class="col-span-12 md:col-span-4">
+      <!-- Card -->
+      <a class="group relative block rounded-xl overflow-hidden" href="#">
+        <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1606836576983-8b458e75221d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description">
+        </div>
+        <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
+          <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-neutral-800 dark:text-neutral-200">
+            Pride 2021
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+    </div>
+    <!-- End Col -->
+
+    <div class="col-span-12 sm:col-span-6 md:col-span-4">
+      <!-- Card -->
+      <a class="group relative block rounded-xl overflow-hidden" href="#">
+        <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="Image Description">
+        </div>
+        <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
+          <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-neutral-800 dark:text-neutral-200">
+            Data at Preline
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+    </div>
+    <!-- End Col -->
+
+    <div class="col-span-12 sm:col-span-6 md:col-span-4">
+      <!-- Card -->
+      <a class="group relative block rounded-xl overflow-hidden" href="#">
+        <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1019&q=80" alt="Image Description">
+        </div>
+        <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
+          <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-neutral-800 dark:text-neutral-200">
+            Empowered management
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+    </div>
+    <!-- End Col -->
+  </div>
+  <!-- End Grid -->
+</div>
+<!-- End Masonry Cards -->
 
 
   </div>
