@@ -35,21 +35,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
           <div class="py-8 first:pt-0 last:pb-0">
             <div class="flex gap-x-5">
-              <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
-
+              <!-- <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg> -->
+              <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" data-slot="icon" width="24" height="24" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"></path>
+              </svg>
               <div>
                 <h3 class="md:text-lg font-semibold text-gray-800 dark:text-neutral-200">
                   Pengurus Harian
                 </h3>
-                <ul>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Endang Ayu Mulyasari
+                <ul class="list-disc list-inside space-y-1 text-gray-500 dark:text-neutral-500">
+                  <li >
+                    Endang Ayu Mulyasari
                   </li>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Suci Hikmahwati
+                  <li >
+                    Suci Hikmahwati
                   </li>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Agi Setiana
+                  <li >
+                    Agi Setiana
                   </li>
                 </ul>
               </div>
@@ -58,24 +60,26 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
           <div class="py-8 first:pt-0 last:pb-0">
             <div class="flex gap-x-5">
-              <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
-
+              <!-- <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg> -->
+              <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" data-slot="icon" width="24" height="24" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"></path>
+              </svg>
               <div>
                 <h3 class="md:text-lg font-semibold text-gray-800 dark:text-neutral-200">
                   Kelas Musik
                 </h3>
-                <ul>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Piano (Ade Wijaya, Agustina, Budi Rahmat Akbar, Ima Ratnasari, Mira Dewi)
+                <ul class="list-disc list-inside space-y-1 text-gray-500 dark:text-neutral-500">
+                  <li>
+                    Piano (Ade Wijaya, Agustina, Budi Rahmat Akbar, Ima Ratnasari, Mira Dewi)
                   </li>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Gitar (Anton, Fuad)
+                  <li>
+                    Gitar (Anton, Fuad)
                   </li>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Drum (Angga)
+                  <li>
+                    Drum (Angga)
                   </li>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Biola (Felicia Asriyani)
+                  <li>
+                    Biola (Felicia Asriyani)
                   </li>
                 </ul>
               </div>
@@ -84,21 +88,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
           <div class="py-8 first:pt-0 last:pb-0">
             <div class="flex gap-x-5">
-              <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
-
+              <!-- <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg> -->
+              <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" data-slot="icon" width="24" height="24" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"></path>
+              </svg>
               <div>
                 <h3 class="md:text-lg font-semibold text-gray-800 dark:text-neutral-200">
                   Kelas Seni
                 </h3>
-                <ul>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Gambar (R. Irni)
+                <ul class="list-disc list-inside space-y-1 text-gray-500 dark:text-neutral-500">
+                  <li>
+                    Gambar (R. Irni)
                   </li>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Komik (Yunita)
+                  <li>
+                    Komik (Yunita)
                   </li>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Ballet (Viva Iin)
+                  <li>
+                    Ballet (Viva Iin)
                   </li>
                 </ul>
               </div>
@@ -107,24 +113,26 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
           <div class="py-8 first:pt-0 last:pb-0">
             <div class="flex gap-x-5">
-              <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
-
+              <!-- <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg> -->
+              <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" data-slot="icon" width="24" height="24" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"></path>
+              </svg>
               <div>
                 <h3 class="md:text-lg font-semibold text-gray-800 dark:text-neutral-200">
                   Kelas Kebugaran
                 </h3>
-                <ul>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Hatha Yoga (Ranti Chairanti, Theresia, Maureen, Tutia)
+                <ul class="list-disc list-inside space-y-1 text-gray-500 dark:text-neutral-500">
+                  <li>
+                    Hatha Yoga (Ranti Chairanti, Theresia, Maureen, Tutia)
                   </li>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Theurapetic Yoga (Indahwati, Rulia)
+                  <li>
+                    Theurapetic Yoga (Indahwati, Rulia)
                   </li>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Iyengar Yoga (Silvy)
+                  <li>
+                    Iyengar Yoga (Silvy)
                   </li>
-                  <li class="mt-1 text-gray-500 dark:text-neutral-500">
-                    <span>- </span>Pilates (Ranti Chairanti)
+                  <li>
+                    Pilates (Ranti Chairanti)
                   </li>
                 </ul>
               </div>
@@ -133,8 +141,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
           <div class="py-8 first:pt-0 last:pb-0">
             <div class="flex gap-x-5">
-              <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
-
+              <!-- <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg> -->
+              <svg class="flex-shrink-0 mt-1 size-6 text-gray-500 dark:text-neutral-500" data-slot="icon" width="24" height="24" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z"></path>
+              </svg>
               <div>
                 <h3 class="md:text-lg font-semibold text-gray-800 dark:text-neutral-200">
                   Matematika Gasing
