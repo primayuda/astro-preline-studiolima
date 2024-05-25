@@ -1,11 +1,154 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const priceList = [
+  {
+    type: "Piano 45'",
+    description: "Introduction 1&2",
+    price: "490"
+  },
+  {
+    type: "Modern Pop & Jazz 45'",
+    description: "Grade 1",
+    price: "550"
+  },
+  {
+    type: "For Leissure 45'",
+    description: "Leissure",
+    price: "565"
+  },
+  {
+    type: "Drum 45'",
+    description: "Grade 1",
+    price: "490"
+  },
+  {
+    type: "Piano Special Need 45'",
+    description: "Tingkat 1",
+    price: "480"
+  },
+  {
+    type: "Biola 45'",
+    description: "Preliminary",
+    price: "470"
+  },
+  {
+    type: "Gitar 45'",
+    description: "Preliminary",
+    price: "435"
+  },
+  {
+    type: "For Leissure 45'",
+    description: "Leissure",
+    price: "475"
+  },
+  {
+    type: "Gitar Electrik 45'",
+    description: "Grade 1",
+    price: "500"
+  },
+  {
+    type: "Kelas Teori Musik 45'",
+    description: "Semua Grade",
+    price: "185"
+  },
+  {
+    type: "Matematika Gasing",
+    description: "Bulanan",
+    price: "350"
+  },
+  {
+    type: "Ballet",
+    description: "Uang Pangkal",
+    price: "350"
+  },
+  {
+    type: "",
+    description: "Uang Bulanan",
+    price: "365"
+  },
+  {
+    type: "",
+    description: "Uang Seragam",
+    price: "400"
+  },
+  {
+    type: "Gambar",
+    description: "Uang Pangkal",
+    price: "150"
+  },
+  {
+    type: "",
+    description: "Kelas Anak",
+    price: "250-300"
+  },
+  {
+    type: "Komik",
+    description: "Uang Pangkal",
+    price: "150"
+  },
+  {
+    type: "",
+    description: "Uang Bulanan",
+    price: "365"
+  },
+  {
+    type: "Yoga",
+    description: "Uang Pangkal",
+    price: "100"
+  },
+  {
+    type: "",
+    description: "Uang Bulanan",
+    price: "250-400"
+  },
+  {
+    type: "Pilates",
+    description: "Uang Pangkal",
+    price: "100"
+  },
+  {
+    type: "",
+    description: "Uang Bulanan",
+    price: "350"
+  },
+]
 ---
 <BaseLayout title="Price">
   <main id="content">
     <div class="max-w-[85rem] mx-auto pt-12 pb-10 px-4 sm:px-6 lg:px-8 md:pt-24">
       <!-- your content goes here ... -->
-      <h1 class="text-4xl font-bold text-neutral-500">Pricing page</h1>
+      <h1 class="text-4xl font-bold text-neutral-500">Harga Kursus</h1>
+      <!-- Start of Table  -->
+      <div class="flex flex-col">
+        <div class="-m-1.5 overflow-x-auto">
+          <div class="p-1.5 min-w-full inline-block align-middle">
+            <div class="overflow-hidden">
+              <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
+                <thead>
+                  <tr>
+                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">Kursus</th>
+                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">Keterangan</th>
+                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">Harga</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {priceList.map(item => {
+                    return (
+                    <tr class="odd:bg-white even:bg-gray-100 hover:bg-gray-100 dark:odd:bg-neutral-800 dark:even:bg-neutral-700 dark:hover:bg-neutral-700">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-800 dark:text-neutral-200">{item.type}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">{item.description}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800 dark:text-neutral-200">{item.price}</td>
+                  </tr>
+                    )
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Table -->
     </div>
   </main>
 </BaseLayout>
