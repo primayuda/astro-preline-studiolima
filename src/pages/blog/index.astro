@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import FormattedDate from "../../components/FormattedDate.astro"
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+// Get all entries from a collection.
+// Requires the name of the collection as an argument.
+// Example: retrieve `src/content/blog/**`
+const allBlogPosts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+// console.log(allBlogPosts);
+
+---
+
+<BaseLayout title="Blog">
+	<!-- ========== MAIN CONTENT ========== -->
+<main id="content">
+  <div class="max-w-[85rem] mx-auto pt-12 pb-10 px-4 sm:px-6 lg:px-8 md:pt-24">
+    <!-- your content goes here ... -->
+		<h1 class="text-4xl font-bold text-neutral-500 text-center">Blog</h1>
+    
+		<!-- Card Blog -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Grid -->
+      <div class="grid lg:grid-cols-2 gap-6">
+        {allBlogPosts.map((post:CollectionEntry<'blog'>) => 
+        
+          <a class="group relative block rounded-xl" href={post.slug}>
+            <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:z-[1] before:size-full before:bg-gradient-to-t before:from-gray-900/70">
+              <img class="size-full absolute top-0 start-0 object-cover" src={post.data.heroImage} alt="Image Description" />
+            </div>
+
+            <div class="absolute top-0 inset-x-0 z-10">
+              <div class="p-4 flex flex-col h-full sm:p-6">
+                <!-- Avatar -->
+                <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <img class="size-[46px] border-2 border-white rounded-full" src="/logo-studiolima.png" alt="Image Description" />
+                  </div>
+                  <div class="ms-2.5 sm:ms-4">
+                    <h4 class="font-semibold text-white">
+                      Studio Lima
+                    </h4>
+                    <p class="text-xs text-white/80">
+                     <FormattedDate date={post.data.pubDate} />
+                    </p>
+                  </div>
+                </div>
+                <!-- End Avatar -->
+              </div>
+            </div>
+
+            <div class="absolute bottom-0 inset-x-0 z-10">
+              <div class="flex flex-col h-full p-4 sm:p-6">
+                <h3 class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/80">
+                  {post.data.title}
+                </h3>
+                <p class="mt-2 text-white/80">
+                  {post.data.description}
+                </p>
+              </div>
+            </div>
+          </a>
+        
+        )}
+      </div>
+      
+    </div>
+    
+  </div>
+</main>
+
+	
+</BaseLayout>

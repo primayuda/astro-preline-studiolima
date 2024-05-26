@@ -17,5 +17,6 @@ export default {
 	// add plugins to your Tailwind CSS project
 	plugins: [
 		require('preline/plugin'),
+		require('@tailwindcss/typography'),
 	],
 }
